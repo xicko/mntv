@@ -8,7 +8,7 @@ const TabStyle = "py-4 md:px-8 px-4 hover:bg-slate-300 transition duration-300";
 const NavBar = () => {
   return (
     <>
-      <div className="fixed w-full top-0 left-0 right-0 z-50 bg-white">
+      <div className="fixed w-full top-0 left-0 right-0 z-50 bg-white text-black">
         <div className="flex md:justify-center justify-normal flex-wrap text-xl">
           <Link className={TabStyle} href={"/"}>
             News
