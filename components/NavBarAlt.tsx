@@ -3,7 +3,7 @@ import React from 'react';
 import { isMobile } from "../utils/isMobile";
 import { headers } from 'next/headers';
 
-let TabStyle = 'py-4 px-6 hover:bg-sky-300 transition duration-300';
+const TabStyle = 'py-4 px-6 hover:bg-sky-300 transition duration-300';
 
 const NavBarAlt = async () => {
     const userAgent = (await headers()).get("user-agent") || "";

@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import players from '../public/data/players.json'
 
-const currentPlayerOG = 0;
-
 const PlayerOfTheWeekHome = () => {
     const [currentPlayer, setCurrentPlayer] = useState(0);
 

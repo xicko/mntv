@@ -5,9 +5,9 @@ import Image from "next/image";
 import teams from "../public/data/teams.json";
 
 function getCurrentDate() {
-  let newDate = new Date();
-  let date = newDate.getDate();
-  let month = newDate.getMonth() + 1;
+  const newDate = new Date();
+  const date = newDate.getDate();
+  const month = newDate.getMonth() + 1;
 
   return `${month} / ${date}`;
 }
@@ -23,7 +23,7 @@ const RankingPreview: React.FC = () => {
         </span>
 
         <div className="flex flex-col border-t-[1px] bg-white border-zinc-300">
-          {rankedTeams.map((team, index) => (
+          {rankedTeams.map((team) => (
             <Link
               href=""
               key={team.id}
