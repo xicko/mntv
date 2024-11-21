@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "name": "The MongolZ",
+        "players": [0, 1, 2, 3, 4],
+        "logo": "/teams/mongolz.webp",
+        "rank": 1
+    },
+    {
+        "id": 1,
+        "name": "Natus Vincere",
+        "players": [5, 6, 7, 8, 9],
+        "logo": "/teams/navi.webp",
+        "rank": 2
+    },
+    {
+        "id": 2,
+        "name": "Team Liquid",
+        "players": [10, 11, 12, 13, 14],
+        "logo": "/teams/liquid.webp",
+        "rank": 3
+    },
+    {
+        "id": 3,
+        "name": "FaZe",
+        "players": [15, 16, 17, 18, 19],
+        "logo": "/teams/faze.webp",
+        "rank": 4
+    },
+    {
+        "id": 4,
+        "name": "G2",
+        "players": [20, 21, 22, 23, 24],
+        "logo": "/teams/g2.webp",
+        "rank": 5
+    }
+]

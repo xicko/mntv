@@ -1,0 +1,206 @@
+[
+    {
+        "id": 0,
+        "nickname": "bLitz",
+        "realName": "Garidmagnai Byambasuren",
+        "rating": 1.14,
+        "team": "The MongolZ",
+        "photo": "/players/blitz.webp"
+    },
+    {
+        "id": 1,
+        "nickname": "910",
+        "realName": "Usukhbayar Banzragch",
+        "rating": 1.19,
+        "team": "The MongolZ",
+        "photo": "/players/910.webp"
+    },
+    {
+        "id": 2,
+        "nickname": "Senzu",
+        "realName": "Oleksandr Kostyliev",
+        "rating": 1.20,
+        "team": "The MongolZ",
+        "photo": "/players/senzu.webp"
+    },
+    {
+        "id": 3,
+        "nickname": "Techno",
+        "realName": "Sodbayar Munkhbold",
+        "rating": 1.10,
+        "team": "The MongolZ",
+        "photo": "/players/techno.webp"
+    },
+    {
+        "id": 4,
+        "nickname": "mzinho",
+        "realName": "Azbayar Munkhbold",
+        "rating": 1.12,
+        "team": "The MongolZ",
+        "photo": "/players/senzu.webp"
+    },
+
+    {
+        "id": 5,
+        "nickname": "b1t",
+        "realName": "Valerij Vakhovsjkyj",
+        "rating": 1.13,
+        "team": "Natus Vincere",
+        "photo": "/players/b1t.webp"
+    },
+    {
+        "id": 6,
+        "nickname": "Aleksib",
+        "realName": "Aleksi Virolainen",
+        "rating": 1.03,
+        "team": "Natus Vincere",
+        "photo": "/players/aleksib.webp"
+    },
+    {
+        "id": 7,
+        "nickname": "jL",
+        "realName": "Justinas Lekavičius",
+        "rating": 1.21,
+        "team": "Natus Vincere",
+        "photo": "/players/jl.webp"
+    },
+    {
+        "id": 8,
+        "nickname": "iM",
+        "realName": "Mihai Ivan",
+        "rating": 1.16,
+        "team": "Natus Vincere",
+        "photo": "/players/im.webp"
+    },
+    {
+        "id": 9,
+        "nickname": "w0nderful",
+        "realName": "Ihor Zhdanov",
+        "rating": 1.11,
+        "team": "Natus Vincere",
+        "photo": "/players/w0nderful.webp"
+    },
+
+    {
+        "id": 10,
+        "nickname": "NAF",
+        "realName": "Keith Markovic",
+        "rating": 1.11,
+        "team": "Team Liquid",
+        "photo": "/players/naf.webp"
+    },
+    {
+        "id": 11,
+        "nickname": "YEKINDAR",
+        "realName": "Mareks Gaļinskis",
+        "rating": 1.13,
+        "team": "Team Liquid",
+        "photo": "/players/yekindar.webp"
+    },
+    {
+        "id": 12,
+        "nickname": "Twistzz",
+        "realName": "Russel Van Dulken",
+        "rating": 1.15,
+        "team": "Team Liquid",
+        "photo": "/players/twistzz.webp"
+    },
+    {
+        "id": 13,
+        "nickname": "ultimate",
+        "realName": "Roland Tomkowiak",
+        "rating": 1.17,
+        "team": "Team Liquid",
+        "photo": "/players/ultimate.webp"
+    },
+    {
+        "id": 14,
+        "nickname": "jks",
+        "realName": "Justin Savage",
+        "rating": 1.10,
+        "team": "Team Liquid",
+        "photo": "/players/jks.webp"
+    },
+
+    {
+        "id": 15,
+        "nickname": "rain",
+        "realName": "Håvard Nygaard",
+        "rating": 1.14,
+        "team": "FaZe",
+        "photo": "/players/rain.webp"
+    },
+    {
+        "id": 16,
+        "nickname": "broky",
+        "realName": "Håvard Nygaard",
+        "rating": 1.10,
+        "team": "FaZe",
+        "photo": "/players/broky.webp"
+    },
+    {
+        "id": 17,
+        "nickname": "karrigan",
+        "realName": "Håvard Nygaard",
+        "rating": 0.95,
+        "team": "FaZe",
+        "photo": "/players/karrigan.webp"
+    },
+    {
+        "id": 18,
+        "nickname": "ropz",
+        "realName": "Håvard Nygaard",
+        "rating": 1.12,
+        "team": "FaZe",
+        "photo": "/players/ropz.webp"
+    },
+    {
+        "id": 19,
+        "nickname": "frozen",
+        "realName": "Håvard Nygaard",
+        "rating": 1.23,
+        "team": "FaZe",
+        "photo": "/players/frozen.webp"
+    },
+
+    {
+        "id": 20,
+        "nickname": "huNter-",
+        "realName": "Nemanja Kovač",
+        "rating": 1.13,
+        "team": "G2",
+        "photo": "/players/hunter.webp"
+    },
+    {
+        "id": 21,
+        "nickname": "NiKo",
+        "realName": "Nikola Kovač",
+        "rating": 1.19,
+        "team": "G2",
+        "photo": "/players/niko.webp"
+    },
+    {
+        "id": 22,
+        "nickname": "m0NESY",
+        "realName": "Ilya Osipov",
+        "rating": 1.30,
+        "team": "G2",
+        "photo": "/players/m0nesy.webp"
+    },
+    {
+        "id": 23,
+        "nickname": "malbsMd",
+        "realName": "Mario Samayoa",
+        "rating": 1.18,
+        "team": "G2",
+        "photo": "/players/malbsmd.webp"
+    },
+    {
+        "id": 24,
+        "nickname": "Snax",
+        "realName": "Janusz Pogorzelski",
+        "rating": 1.01,
+        "team": "G2",
+        "photo": "/players/snax.webp"
+    }
+]
