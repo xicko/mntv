@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className='scroll-smooth'>
       <main className='flex justify-center bg-zinc-800'>
-        <div className='bg-sky-100 text-black space-y-8 px-16 py-10 md:w-[1300px] w-full h-fit'>
+        <div className='bg-sky-100 space-y-8 md:px-16 px-8 md:py-10 py-8 md:w-[1300px] w-full h-fit'>
           <div className='md:w-[400px] w-full h-fit'>
             <Image src={'mntvlogo.svg'} alt={'Logo'} width={600} height={600} className='' draggable={false}/>
           </div>

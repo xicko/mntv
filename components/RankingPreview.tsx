@@ -42,7 +42,7 @@ const RankingPreview: React.FC = () => {
           ))}
         </div>
 
-        <div className='text-white pb-4 text-center'>
+        <div className='text-white pb-4 customfontmono text-center'>
             <p>Last updated: {getCurrentDate()}</p>
         </div>
       </div>
