@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='customfont antialiased'
+        className='customfont antialiased scroll-smooth'
       >
         <NavBar />
 

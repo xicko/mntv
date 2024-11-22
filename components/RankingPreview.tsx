@@ -27,17 +27,17 @@ const RankingPreview: React.FC = () => {
             <Link
               href=""
               key={team.id}
-              className="flex flex-row items-center hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-300 border-b-[1px]"
+              className="flex flex-row md:text-md text-lg items-center hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-300 border-b-[1px]"
             >
-              <span className='pr-1'>{team.rank}.</span>
+              <p className='pr-1'>{team.rank}.</p>
               <Image
                 src={team.logo}
                 alt={"Team"}
-                width={36}
-                height={36}
-                className="p-1"
+                width={100}
+                height={100}
+                className="p-1 aspect-square md:w-9 w-12"
               />{" "}
-              {team.name}
+              <p className='pl-1'>{team.name}</p>
             </Link>
           ))}
         </div>

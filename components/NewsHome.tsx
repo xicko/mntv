@@ -15,7 +15,7 @@ const NewsHome = () => {
         <p className='text-zinc-600 px-6'>Today&apos;s News</p>
 
         {news.map((news,index) => (
-            <Link href='' className='flex flex-col px-6 hover:bg-slate-200 font-semibold border-b-[1px] border-zinc-200 py-4' key={index}>{news.subject}</Link>
+            <Link href='' className='flex flex-col px-6 hover:bg-slate-200 transition font-semibold border-b-[1px] border-zinc-200 py-4' key={index}>{news.subject}</Link>
         ))}
       </div>
 

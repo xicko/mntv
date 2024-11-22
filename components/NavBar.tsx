@@ -67,6 +67,7 @@ const NavBar = () => {
               width={36}
               height={36}
               className="aspect-square mt-1 w-9 h-9"
+              draggable={false}
             />
           </button>
         </div>

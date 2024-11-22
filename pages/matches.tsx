@@ -6,9 +6,9 @@ import RankingPreview from "@/components/RankingPreview";
 import NewsHome from "@/components/NewsHome";
 import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function Matches() {
   return (
-    <>
+    <div>
       <main className='flex justify-center bg-zinc-800'>
         <div className='bg-sky-100 space-y-8 md:px-16 px-8 md:py-10 py-8 md:w-[1300px] w-full h-fit'>
           <div className='md:w-[400px] w-full h-fit'>
@@ -35,6 +35,6 @@ export default function Home() {
         
 
       </main>
-    </>
+    </div>
   );
 }
