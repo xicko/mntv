@@ -20,6 +20,7 @@ const pagesHidden = [
 const TabStyle = "py-4 md:px-8 px-4 hover:bg-slate-300 transition duration-300";
 
 const NavBar = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isMobile, setIsMobile] = useState(false);
   const [visible, setVisible] = useState(false);
 
