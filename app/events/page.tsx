@@ -4,7 +4,6 @@ import EventsHome from "@/components/EventsHome";
 import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
 import Footer from "@/components/Footer";
-import Matches from "@/components/Matches";
 
 export default function index() {
   return (
