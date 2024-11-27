@@ -3,13 +3,13 @@ import PlayerOfTheWeekHome from "@/components/PlayerOfTheWeekHome";
 import EventsHome from "@/components/EventsHome";
 import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
-import NewsHome from "@/components/NewsHome";
 import Footer from "@/components/Footer";
+import Matches from "@/components/Matches";
 
-export default function Matches() {
+export default function index() {
   return (
-    <div>
-      <main className='flex justify-center bg-zinc-800'>
+    <>
+      <div className='flex justify-center bg-zinc-800'>
         <div className='bg-sky-100 space-y-8 md:px-16 px-8 md:py-10 py-8 md:w-[1300px] w-full h-fit'>
           <div className='md:w-[400px] w-full h-fit'>
             <Image src={'mntvlogo.svg'} alt={'Logo'} width={600} height={600} className='' draggable={false}/>
@@ -23,7 +23,9 @@ export default function Matches() {
 
             <div className='flex flex-col gap-y-8'>
               <EventsHome />
-              <NewsHome />
+              
+              {/* main content below */}
+              <Matches />
             </div>
            
             <ForumRecent />
@@ -34,7 +36,7 @@ export default function Matches() {
 
         
 
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
