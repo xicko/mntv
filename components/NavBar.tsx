@@ -12,7 +12,7 @@ const pagesTop = [
 
 const pagesHidden = [
   { name: "Ranking", href: "/ranking" },
-  { name: "Stats", href: "/statistics" },
+  { name: "Stats", href: "/stats" },
   { name: "Teams", href: "/teams" },
   { name: "Forum", href: "/forum" },
 ];
