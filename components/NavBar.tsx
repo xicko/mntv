@@ -17,7 +17,7 @@ const pagesHidden = [
   { name: "Forum", href: "/forum" },
 ];
 
-const TabStyle = "py-4 md:px-8 px-4 hover:bg-slate-300 transition duration-300";
+const TabStyle = "py-4 md:px-8 px-4 hover:bg-slate-300 transition-all duration-300";
 
 const NavBar = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -54,7 +54,19 @@ const NavBar = () => {
         <div className='flex md:justify-end justify-between'>
           <div className="flex md:justify-center md:w-full justify-normal md:flex-nowrap flex-wrap text-xl">
             {pagesTop.map((page, index) => (
-              <Link className={TabStyle} href={page.href} key={index}>
+              <Link 
+              className={TabStyle} 
+              href={page.href} 
+              key={index}
+              style={{
+                fontVariationSettings: "'wght' 400",
+              }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.fontVariationSettings = "'wght' 600")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.fontVariationSettings = "'wght' 400")
+              }>
                 {page.name}
               </Link>
             ))}
@@ -75,11 +87,19 @@ const NavBar = () => {
         <div className="flex md:w-fit w-[90%] justify-normal flex-wrap text-xl">
           {pagesHidden.map((page, index) => (
             <Link
-              hidden={!visible}
-              className={TabStyle}
-              href={page.href}
-              key={index}
-            >
+            hidden={!visible}
+            className={TabStyle}
+            href={page.href}
+            key={index}
+            style={{
+              fontVariationSettings: "'wght' 400",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.fontVariationSettings = "'wght' 600")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.fontVariationSettings = "'wght' 400")
+            }>
               {page.name}
             </Link>
           ))}

@@ -29,11 +29,10 @@ export default function Home() {
             <ForumRecent />
           </div>
 
+          
+
           <Footer />
         </div>
-
-        
-
       </main>
     </>
   );
