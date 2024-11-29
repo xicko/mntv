@@ -5,7 +5,7 @@ import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
 import Footer from "@/components/Footer";
 
-export default function index() {
+export default function Page() {
   return (
     <>
       <div className='flex justify-center bg-zinc-800'>

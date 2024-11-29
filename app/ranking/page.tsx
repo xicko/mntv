@@ -16,7 +16,7 @@ export default function index() {
           </div>
 
           <div className='flex md:justify-between md:flex-nowrap flex-wrap gap-x-8 gap-y-8'>
-            <div className='flex flex-col gap-y-8'>
+            <div className='md:flex hidden flex-col gap-y-8'>
               <PlayerOfTheWeekHome />
               <RankingPreview />
             </div>

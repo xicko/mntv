@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
@@ -9,7 +11,12 @@ const posts = [
     {subject: 'ulaanbaatar major when?', commentnum: '36'},
 ]
 
-const ForumRecent = () => {
+type setVisibleProps = {
+  visible?: boolean,
+  setVisible?: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const ForumRecent: React.FC<setVisibleProps> = ({ visible, setVisible }) => {
   return (
     <>
       <div className='relative md:w-[250px] w-full bg-white rounded-md h-[600px] overflow-hidden'>
@@ -24,7 +31,7 @@ const ForumRecent = () => {
             ))}
         </div>
 
-        <div className='absolute bottom-4 right-4'><Link href=''><Image src={'/newpost.svg'} alt={'New Post'} width={50} height={50} draggable={false}/></Link></div>
+        <div className='absolute bottom-4 right-4'><Link href='' onClick={() => setVisible && setVisible(!visible)}><Image src={'/newpost.svg'} alt={'New Post'} width={50} height={50} draggable={false}/></Link></div>
       </div>
     </>
   )
