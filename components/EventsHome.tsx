@@ -7,7 +7,7 @@ const buttonStyle = 'w-1/2 hover:bg-sky-800 self-center py-[11px] transition dur
 const EventsHome = () => {
   return (
     <>
-      <div className='relative h-[200px] max-w-fit w-fit bg-cyan-950 rounded-md'>
+      <div className='relative h-[200px] md:w-[609px] w-fit bg-cyan-950 rounded-md'>
         <Image src={'/events/PWShanghai2024.webp'} style={{objectFit: "cover"}} alt={'Event Thumbnail'} width={1000} height={1000} draggable={false} className='w-fit h-[150px] rounded-t-md'/>
         <div className='absolute mb-[60px] ml-5 bottom-0 left-0 right-0'>
             <p className='text-white md:text-2xl text-lg font-semibold'>PerfectWorld Shanghai 2024</p>

@@ -28,9 +28,9 @@ export default function index() {
               <Matches />
             </div>
            
-            <div className='md:flex hidden'>
-              <ForumRecent />
-            </div>
+            
+            <ForumRecent />
+            
           </div>
 
           <Footer />

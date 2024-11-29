@@ -4,6 +4,7 @@ import EventsHome from "@/components/EventsHome";
 import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
 import Footer from "@/components/Footer";
+import Ranking from "@/components/Ranking";
 
 export default function index() {
   return (
@@ -21,10 +22,10 @@ export default function index() {
             </div>
 
             <div className='flex flex-col gap-y-8'>
-              <EventsHome />
+              
               
               {/* main content below */}
-              
+              <Ranking />
             </div>
            
             <ForumRecent />

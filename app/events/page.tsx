@@ -4,6 +4,7 @@ import EventsHome from "@/components/EventsHome";
 import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
 import Footer from "@/components/Footer";
+import Events from "@/components/Events";
 
 export default function index() {
   return (
@@ -15,16 +16,16 @@ export default function index() {
           </div>
 
           <div className='flex md:justify-between md:flex-nowrap flex-wrap gap-x-8 gap-y-8'>
-            <div className='flex flex-col gap-y-8'>
+            <div className='md:flex hidden flex-col gap-y-8'>
               <PlayerOfTheWeekHome />
               <RankingPreview />
             </div>
 
             <div className='flex flex-col gap-y-8'>
-              <EventsHome />
+              
               
               {/* main content below */}
-              
+              <Events />
             </div>
            
             <ForumRecent />
