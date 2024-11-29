@@ -52,22 +52,22 @@ const Matches = () => {
               </div>
 
 
-              <div className='flex justify-normal flex-row text-end gap-2 w-[10%]'>
-                <div className='flex flex-col gap-y-2 justify-between text-right font-semibold'>
+              <div className='flex justify-center flex-row text-end gap-2 w-[10%]'>
+                <div className='flex flex-col gap-y-2 justify-around text-right font-semibold'>
                   <p>{matches.rounds1}</p>
 
                   <p>{matches.rounds2}</p>
                 </div>
 
-                <div className='flex flex-col gap-y-2 justify-between text-left'>
+                <div className='flex flex-col gap-y-2 justify-around text-left'>
                   <p>({matches.maps1})</p>
 
                   <p>({matches.maps2})</p>
                 </div>
               </div>
 
-              <div className='flex gap-x-2 justify-end content-end w-[25%]'>
-                <div className='flex flex-row '>
+              <div className='flex justify-end content-end w-[25%]'>
+                <div className='flex flex-row gap-x-2'>
                   <div className='md:w-6 md:h-6 w-5 h-5 self-center'>
                     <Image src={'/pwshanghai.webp'} alt={''} width={50} height={50}/>
                   </div>
@@ -87,7 +87,7 @@ const Matches = () => {
                 <div className='flex justify-center flex-col gap-y-2 w-[15%]'>
                   <p>{futurematches.time}</p>
 
-                  <p className='w-fit md:rounded-md rounded-[4px] px-2 bg-cyan-700 text-white whitespace-nowrap'>BO {futurematches.bo}</p> 
+                  <p className='w-fit md:rounded-md rounded-[4px] md:px-2 px-1 bg-cyan-700 text-white whitespace-nowrap'>BO {futurematches.bo}</p> 
                 </div>
                 
                 <div className='flex justify-end flex-col gap-y-2 w-[35%]'>
@@ -108,7 +108,7 @@ const Matches = () => {
                 </div>
 
                 <div className='flex justify-end gap-x-2 flex-row w-[50%]'>
-                  <div className='w-6 h-6 self-center'><Image src={'/pwshanghai.webp'} alt={''} width={50} height={50}/></div>
+                  <div className='md:w-6 md:h-6 w-5 h-5 self-center'><Image src={'/pwshanghai.webp'} alt={''} width={50} height={50}/></div>
                   
                   <p className='self-center text-zinc-600 line-clamp-2'>PerfectWorld Shanghai 2024</p>
                 </div>
