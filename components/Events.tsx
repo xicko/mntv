@@ -18,7 +18,7 @@ const Events = () => {
         <p className='text-zinc-600 px-6'>Events</p>
 
         {events.map((event,index) => (
-            <div className=''>
+            <div key={index}>
                 <p className='text-zinc-600 px-6 pt-8 pb-2'>{events[index].date}</p>
                 
                 <Link href={events[index].link} className='flex flex-col px-0 hover:bg-slate-200 transition font-semibold border-b-[0px] border-zinc-200' key={index}>

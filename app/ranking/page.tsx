@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PlayerOfTheWeekHome from "@/components/PlayerOfTheWeekHome";
-import EventsHome from "@/components/EventsHome";
+// import EventsHome from "@/components/EventsHome";
 import ForumRecent from "@/components/ForumRecent";
 import RankingPreview from "@/components/RankingPreview";
 import Footer from "@/components/Footer";
