@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { useForumModal } from "@/components/ForumModalContext";
 
 const posts = [
     {subject: 'Mongolz tier 1?', commentnum: '21'},
@@ -10,18 +11,14 @@ const posts = [
     {subject: 'ulaanbaatar major when?', commentnum: '36'},
 ]
 
-type setVisibleProps = {
-    visible?: boolean,
-    setVisible?: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const Forum: React.FC<setVisibleProps> = ({ visible, setVisible }) => {
+const Forum: React.FC = () => {
+  const { toggleModal } = useForumModal();
   return (
-    <div>
-      <div className='bg-white pt-4 w-[609px] h-fit rounded-md'>
+    <div className=''>
+      <div className='bg-white pt-4 md:w-[609px] h-fit rounded-md'>
         <div className='flex flex-row justify-between'>
             <p className='text-zinc-600 px-6'>Forum</p>
-            <button onClick={() => setVisible && setVisible(!visible)} className='flex justify-end mx-4 px-2 text-center text-white hover:text-black bg-cyan-700 hover:bg-zinc-300 transition rounded-md'>New Topic</button>
+            <button onClick={toggleModal} className='flex justify-end mx-4 px-2 text-center text-white hover:text-black bg-cyan-700 hover:bg-zinc-300 transition rounded-md'>New Topic</button>
         </div>
 
         {posts.map((posts,index) => (

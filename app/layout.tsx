@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import ForumModal from "@/components/ForumModal";
+import { ForumModalProvider } from "@/components/ForumModalContext";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const geistSans = localFont({
@@ -32,8 +34,12 @@ export default function RootLayout({
       <body className='customfont antialiased scroll-smooth'>
         <NavBar />
 
-        {children}
+        <ForumModalProvider>
+          <ForumModal />
+          {children}
+        </ForumModalProvider>
 
+        
       </body>
     </html>
   );

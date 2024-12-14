@@ -58,6 +58,7 @@ const NavBar = () => {
               className={TabStyle} 
               href={page.href} 
               key={index}
+              draggable={false}
               style={{
                 fontVariationSettings: "'wght' 400",
               }}
@@ -91,6 +92,7 @@ const NavBar = () => {
             className={TabStyle}
             href={page.href}
             key={index}
+            draggable={false}
             style={{
               fontVariationSettings: "'wght' 400",
             }}
