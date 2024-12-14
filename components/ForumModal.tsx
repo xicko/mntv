@@ -42,6 +42,7 @@ const ForumModal = () => {
             placeholder="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            maxLength={64}
             required
             className="mb-2 rounded-t-md w-full text-black placeholder:text-zinc-600 placeholder:underline px-4 py-3 outline-none"
           />
@@ -49,6 +50,7 @@ const ForumModal = () => {
             placeholder="Topic"
             value={topic}
             onChange={(e) => setTopic(e.target.value)}
+            maxLength={720}
             required
             className="w-full resize-none md:h-[20vh] h-[28vh] text-black placeholder:text-zinc-600 px-4 outline-none"
           />

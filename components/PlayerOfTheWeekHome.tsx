@@ -1,20 +1,15 @@
 'use client';
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import players from '../public/data/players.json'
 
 const PlayerOfTheWeekHome = () => {
-    const [currentPlayer, setCurrentPlayer] = useState(0);
+    const [currentPlayer] = useState(() => getRandomInt(25));
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentPlayer(prevValue => (prevValue >= 24 ? 0 : prevValue + 1));
-        }, 1400);
-
-        return () => clearInterval(interval);
-    }, []);
-
+    function getRandomInt(max: 25) {
+      return Math.floor(Math.random() * max);
+    }
   return (
     <>
       <div className='flex justify-normal relative overflow-hidden bg-gradient-to-b from-cyan-700 to-cyan-950 md:aspect-square md:w-[250px] md:h-[250px] max-w-full rounded-md'>
