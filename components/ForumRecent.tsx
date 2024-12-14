@@ -2,20 +2,36 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForumModal } from "@/components/ForumModalContext";
+import { supabase } from "@/lib/supabase";
 
-const posts = [
-    {subject: 'Mongolz tier 1?', commentnum: '21'},
-    {subject: 'bLitz and aleksiB', commentnum: '15'},
-    {subject: 'techno my goat', commentnum: '7'},
-    {subject: 'ulaanbaatar major when?', commentnum: '36'},
-]
-
-
+interface Post {
+  id: number;
+  title: string;
+}
 
 const ForumRecent: React.FC = () => {
   const { toggleModal } = useForumModal();
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+      const fetchPosts = async () => {
+        const { data, error } = await supabase
+        .from('forumposts')
+        .select('*')
+        .order('id', { ascending: false });
+  
+        if (error) {
+          console.error('Error fetching posts:', error.message);
+          return;
+        }
+  
+        setPosts(data);
+      };
+  
+      fetchPosts();
+    }, []);
 
   return (
     <>
@@ -23,10 +39,10 @@ const ForumRecent: React.FC = () => {
         <p className='text-lg font-semibold px-4 bg-cyan-700 py-2 text-white'>Recent Activity</p>
 
         <div className='flex flex-col bg-white'>
-            {posts.map((post, index) => (
-                <Link href='' key={index} className='flex justify-between hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-400 border-b-[1px]'>
-                    <span className='text-left'>{posts[index].subject}</span>
-                    <span className='text-right'>{posts[index].commentnum}</span>
+            {posts.map(( post ) => (
+                <Link href='' key={post.id} className='flex justify-between hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-400 border-b-[1px]'>
+                    <span className='text-left'>{post.title}</span>
+                    <span className='text-right'>N/A</span>
                 </Link>
             ))}
         </div>
