@@ -40,14 +40,14 @@ const ForumRecent: React.FC = () => {
 
         <div className='flex flex-col bg-white'>
             {posts.map(( post ) => (
-                <Link href='' key={post.id} className='flex justify-between hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-400 border-b-[1px]'>
+                <Link href={`/forum/` + post.id} key={post.id} className='flex justify-between hover:bg-slate-200 transition duration-150 py-2 px-4 border-zinc-400 border-b-[1px]'>
                     <span className='text-left'>{post.title}</span>
                     <span className='text-right'>N/A</span>
                 </Link>
             ))}
         </div>
 
-        <div className='absolute bottom-4 right-4'><button onClick={toggleModal}><Image src={'/newpost.svg'} alt={'New Post'} width={50} height={50} draggable={false}/></button></div>
+        <div className='absolute bottom-4 right-4 w-[50px] h-[50px]'><button onClick={toggleModal}><Image src={'/newpost.svg'} alt={'New Post'} width={50} height={50} draggable={false}/></button></div>
       </div>
     </>
   )

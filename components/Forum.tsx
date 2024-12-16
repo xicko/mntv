@@ -48,7 +48,7 @@ const Forum: React.FC = () => {
         </div>
 
         {posts.map(( post ) => (
-            <Link href='' className='flex flex-col px-6 hover:bg-slate-200 transition font-semibold border-b-[1px] border-zinc-200 py-4' key={post.id}>{post.title}</Link>
+            <Link href={`/forum/` + post.id} className='flex flex-col px-6 hover:bg-slate-200 transition font-semibold border-b-[1px] border-zinc-200 py-4' key={post.id}>{post.title}</Link>
         ))}
       </div>
     </div>

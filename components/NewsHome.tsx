@@ -28,7 +28,7 @@ const NewsHome = () => {
             <Link href='' className='flex flex-col px-6 hover:bg-slate-200 transition font-semibold border-b-[1px] border-zinc-200 py-4' key={index}>{news.subject}</Link>
         ))}
 
-        <Link className='flex justify-center py-2 text-center text-sky-800 hover:bg-sky-200 transition rounded-b-md' href={''}>More news</Link>
+        <Link className='flex justify-center py-2 text-center text-sky-800 hover:bg-sky-200 transition rounded-b-md' href={'/news'}>More news</Link>
       </div>
     </>
   )
