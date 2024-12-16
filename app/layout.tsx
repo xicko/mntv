@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import ForumModal from "@/components/ForumModal";
 import { ForumModalProvider } from "@/components/ForumModalContext";
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "MNTV",

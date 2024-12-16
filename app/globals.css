@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GeistSans';
+  src: url('/fonts/GeistVF.woff') format('woff');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 .customfont {
-  font-family: GeistSans, sans-serif;
+  font-family: geistSans, sans-serif;
 }
 
 .customfontmono {
-  font-family: GeistMono, sans-serif;
+  font-family: geistMono, sans-serif;
 }
